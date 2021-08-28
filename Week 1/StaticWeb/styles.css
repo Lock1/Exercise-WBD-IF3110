@@ -1,0 +1,89 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 50px;
+    padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  background-color: #EEE;
+  max-width: 180px;
+  min-width: 150px;
+  max-height: 260px;
+  min-height: 230px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  opacity: 0.95;
+}
+
+.card:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+#item-overlay-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#overlay-img {
+  position:absolute;
+  left:5%;
+  max-height: 440px;
+  min-height: 440px;
+}
+
+#overlay-box {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  background-color: #EEE;
+  max-width: 80%;
+  min-width: 60%;
+  max-height: 80%;
+  min-height: 70%;
+  text-align: center;
+  font-family: arial;
+}
+
+#overlay-inner-box {
+  position:absolute;
+  top:40%;
+  left:72%;
+  transform:translate(-50%, -50%);
+
+  padding: 20px;
+
+  max-width: 45%;
+  min-width: 45%;
+  max-height: 70%;
+  min-height: 70%;
+  text-align: center;
+  font-family: arial;
+}
+
